@@ -1,9 +1,9 @@
 import React from "react";
-
+import DashboardLayout from "../components/layouts/DashboardLayout";
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <DashboardLayout />
     </div>
   );
 }
