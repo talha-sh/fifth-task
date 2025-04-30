@@ -28,7 +28,7 @@ const SidebarMenu = ({ icon, isActive, onClick }) => (
   </div>
 );
 
-export default function DashboardLayout() {
+export default function DashboardLayout({children}) {
   const [activeMenu, setActiveMenu] = useState("Portfolio");
 
   const menus = [
@@ -134,7 +134,7 @@ export default function DashboardLayout() {
       </div>
 
       {/* Main layout below navbar */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1">
         {/* Sidebar */}
         <div className="bg-green-light flex flex-col items-center !px-[5px]">
           {menus.map((menu) => (
@@ -166,7 +166,7 @@ export default function DashboardLayout() {
         </div>
 
         {/* Main content */}
-        <div className="flex-1 bg-gray-100 p-6">Main content here</div>
+        <div className="flex-1 !p-6">{children}</div>
       </div>
     </div>
   );

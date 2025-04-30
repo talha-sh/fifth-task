@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = ({
   level = 2,
-  size = "medium",
+  size = 16,
   className = "",
   children,
   ...props

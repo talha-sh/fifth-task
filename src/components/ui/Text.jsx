@@ -1,7 +1,7 @@
 import React from "react";
 
 const Text = ({
-  size = "medium",
+  size = "14",
   color = "black",
   weight = "normal",
   className = "",
@@ -23,6 +23,7 @@ const Text = ({
   };
 
   const weightClasses = {
+    light: "font-light",
     normal: "font-normal",
     bold: "font-bold",
   };
